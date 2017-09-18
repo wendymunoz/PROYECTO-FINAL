@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Chistes>
+  <Chiste>
+    <Ruta>d1.jpg</Ruta>
+  </Chiste>
+  <Chiste>
+    <Ruta>d2.jpg</Ruta>
+  </Chiste>
+  <Chiste>
+    <Ruta>d3.jpg</Ruta>
+  </Chiste>
+  <Chiste>
+    <Ruta>d4.jpg</Ruta>
+  </Chiste>
+  <Chiste>
+    <Ruta>d5.jpg</Ruta>
+  </Chiste>
+</Chistes>
+

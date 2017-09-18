@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Advertisements>
+  <Ad>
+    <ImageUrl>Imagenes/Chistes/c01.jpg</ImageUrl>
+  </Ad>
+  <Ad>
+    <ImageUrl>Imagenes/Dota/d1.jpg</ImageUrl>
+  </Ad>
+</Advertisements>

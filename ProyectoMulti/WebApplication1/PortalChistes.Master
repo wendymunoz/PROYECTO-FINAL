@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PortalChistes.master.cs" Inherits="WebApplication1.PortalChistes" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+        body{ font-family: Arial;}
+        header, footer, nav { text-align:center; padding: 20px; background-color: #ffd800;}
+        .grilla{
+            width: 100%;
+        }
+        .grilla td{
+            text-align:center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <img src="https://upcomedyshows.files.wordpress.com/2014/02/noche-de-chistes-logo.jpg" width="150" />
+        </header>
+        <nav>
+            <a href="Default.aspx">Chistes Informáticos</a>
+            <a href="Dota.aspx">Chistes de Dota</a>
+            <a href="Aleatorio.aspx">Chiste Aleatorio</a>
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            Wendy Muñoz
+        </footer>
+    </form>
+</body>
+</html>
