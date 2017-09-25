@@ -38,7 +38,8 @@
 <p>
     Mensaje:</p>
 <p>
-    <asp:TextBox ID="MensajeTxt" runat="server" Height="74px" Width="348px" CssClass="alerta"></asp:TextBox>
+    <asp:TextBox ID="MensajeTxt" runat="server" Height="74px" Width="348px" CssClass="alerta" OnTextChanged="MensajeTxt_TextChanged"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="MensajeTxt" CssClass="alerta" Display="Dynamic" ErrorMessage="Completar este campo">Completar este campo</asp:RequiredFieldValidator>
 </p>
 <p>
     <asp:Button ID="EnviarBtt" runat="server" Text="Enviar" />

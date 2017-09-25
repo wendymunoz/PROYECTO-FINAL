@@ -23,5 +23,10 @@ namespace ProyectoMulti
         {
 
         }
+
+        protected void MensajeTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
