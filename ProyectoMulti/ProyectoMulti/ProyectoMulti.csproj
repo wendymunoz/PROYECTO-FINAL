@@ -69,7 +69,6 @@
     <Content Include="Blog.aspx" />
     <Content Include="CSS\Estilos.css" />
     <Content Include="Imagenes\logo1.png" />
-    <Content Include="Inicio.aspx" />
     <Content Include="Nosotros.aspx" />
     <Content Include="packages.config" />
     <Content Include="PagMaestra.Master" />
@@ -91,6 +90,7 @@
   <ItemGroup>
     <Compile Include="Blog.aspx.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Blog.aspx.designer.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
@@ -105,14 +105,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Inicio.aspx.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Inicio.aspx.designer.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Nosotros.aspx.cs">
       <DependentUpon>Nosotros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Nosotros.aspx.designer.cs">
       <DependentUpon>Nosotros.aspx</DependentUpon>
@@ -141,6 +136,7 @@
     </Compile>
     <Compile Include="TiendaOnline.aspx.cs">
       <DependentUpon>TiendaOnline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TiendaOnline.aspx.designer.cs">
       <DependentUpon>TiendaOnline.aspx</DependentUpon>

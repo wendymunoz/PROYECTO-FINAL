@@ -11,7 +11,7 @@ namespace ProyectoMulti
 {
 
 
-    public partial class Blog
+    public partial class TiendaOnline
     {
     }
 }
