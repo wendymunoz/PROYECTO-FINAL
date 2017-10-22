@@ -11,11 +11,46 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <header>
+        <div id="logo">
+        
+        <img src="Imagenes/logo1.png" width="200"/>
+        </div>
+
+        <div id="navegador">
+        <nav>
+            <ul>
+                <li><a href="Inicio.aspx">Inicio </a></li>
+                <li><a href="TiendaOnline.aspx"> Tienda Online </a></li>
+                <li><a href="Nosotros.aspx"> Nosotros </a></li>
+                <li><a href="contacto.aspx"> Contacto </a></li>
+                <li><a href="Blog.aspx"> Blog</a></li>
+
+            </ul>
+        </nav>
+        </div>
+    </header>
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+
+    <footer>
+        <div id="correo">
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; % Recibe ofertas en tu correo!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;<asp:TextBox ID="txtCorreo" runat="server" Height="28px" style="margin-left: 0px" TextMode="Email" Width="185px"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button1" runat="server" Height="33px" Text="Enviar" Width="72px" />
+            </p> 
+        </div>
+      
+        <div id="final">
+            <p> La Mejor Tienda en productos saludables</p>
+        </div>
+    </footer>
     </form>
-</body>
+
+    </body>
 </html>

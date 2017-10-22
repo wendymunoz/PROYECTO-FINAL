@@ -1,7 +1,38 @@
 ﻿body {
-    font-family: Arial;
+   
 }
-
 .alerta{
     color: red;
+}
+#logo{
+    text-align:center;
+}
+
+#navegador{
+    text-align:center;
+    background-color:forestgreen;
+    padding:5px;
+    
+}
+nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    
+}
+nav a {
+    color: white;
+    font-family: 'Arial Unicode MS';
+    font-weight: bold;
+    font-size: 20px;
+}
+#correo{
+    background-color: limegreen;
+    color:white;
+    padding:10px 0;
+}
+#final{
+    text-align:center;
+    background-color:gray;
+    color:white;
+    padding:2px;
 }
