@@ -91,7 +91,6 @@
   <ItemGroup>
     <Compile Include="Blog.aspx.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Blog.aspx.designer.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
@@ -108,14 +107,12 @@
     </Compile>
     <Compile Include="Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Nosotros.aspx.cs">
       <DependentUpon>Nosotros.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Nosotros.aspx.designer.cs">
       <DependentUpon>Nosotros.aspx</DependentUpon>
@@ -144,7 +141,6 @@
     </Compile>
     <Compile Include="TiendaOnline.aspx.cs">
       <DependentUpon>TiendaOnline.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TiendaOnline.aspx.designer.cs">
       <DependentUpon>TiendaOnline.aspx</DependentUpon>
