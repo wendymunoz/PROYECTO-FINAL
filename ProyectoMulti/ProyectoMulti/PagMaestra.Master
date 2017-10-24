@@ -4,31 +4,58 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <link href="CSS/Estilos.css" rel="stylesheet" />
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
 </head>
 <body>
     <header>
-        <div id="logo">
+
+        <div class="izq"></div>
         
-        <img src="Imagenes/logo1.png" width="200"/>
+        <div class="sesion">
+
+            <a href="#" class="boton verde">Subscribete aquí</a>
+
+            <div class="dropdown">
+                <span style="margin-top: 4px;"><img src="Imagenes/usuario.png" width="30" /></span>
+                <div class="dropdown-content">
+                    <p><a href="#">Iniciar Sesión</a></p>
+                    <p><a href="#">Registrarse</a></p>
+                    <p><a href="#">Mi cuenta</a></p>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <span><img src="Imagenes/carrito.png" width="30" /></span>
+            </div>
+
         </div>
 
-        <div id="navegador">
+        <div class="logo">
+            <img src="Imagenes/logo1.png" width="150" />
+        </div>
+        <div class="clear"></div>
+
         <nav>
             <ul>
-                <li><a href="Inicio.aspx">Inicio </a></li>
-                <li><a href="TiendaOnline.aspx"> Tienda Online </a></li>
-                <li><a href="Nosotros.aspx"> Nosotros </a></li>
-                <li><a href="contacto.aspx"> Contacto </a></li>
-                <li><a href="Blog.aspx"> Blog</a></li>
-
+                <li><a href="Default.aspx">Inicio</a></li>
+                <li><a href="TiendaOnline.aspx">Tienda Online</a>
+                    <ul>
+                        <li><a href="TiendaOnline.aspx#Alimentos"><strong>ALIMENTOS VEGETARIANOS</strong></a></li>
+                        <li><a href="TiendaOnline.aspx#Bebidas"><strong>SUPLEMENTOS</strong></a></li>
+                        <li><a href="TiendaOnline.aspx#Bebidas"><strong>BEBIDAS</strong></a></li>
+                        <li><a href="TiendaOnline.aspx#Cereales"><strong>CEREALES</strong></a></li>
+                        <li><a href="TiendaOnline.aspx#Snacks"><strong>SNACKS</strong></a></li>
+                        <li><a href="TiendaOnline.aspx#Comida"><strong>COMIDA PREPARADA</strong></a></li>
+                        <li><a href="TiendaOnline.aspx#Comida"><strong>REPOSTERIA</strong></a></li>
+                    </ul>
+                </li>
+                <li><a href="Nosotros.aspx">Nosotros</a></li>
+                <li><a href="contacto.aspx">Contacto</a></li>
+                <li><a href="Blog.aspx">Blog</a></li>
             </ul>
         </nav>
-        </div>
     </header>
     <form id="form1" runat="server">
         <div>
@@ -36,21 +63,22 @@
             </asp:ContentPlaceHolder>
         </div>
 
-    <footer>
-        <div id="correo">
-        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; % Recibe ofertas en tu correo!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-        &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;<asp:TextBox ID="txtCorreo" runat="server" Height="28px" style="margin-left: 0px" TextMode="Email" Width="185px"></asp:TextBox>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" Height="33px" Text="Enviar" Width="72px" />
-            </p> 
-        </div>
-      
-        <div id="final">
-            <p> La Mejor Tienda en productos saludables</p>
-        </div>
-    </footer>
+        <footer>
+            <div id="correo">
+                <p>
+                    <span class="oferta">% Recibe ofertas en tu correo!</span>
+                    <span class="txtCorreo">
+                        <asp:TextBox ID="txtCorreo" CssClass="txtCorreo" runat="server" TextMode="Email"></asp:TextBox></span>
+                    <span class="txtEnviar">
+                        <asp:Button ID="Button1" CssClass="txtEnviar" runat="server" Text="Enviar" /></span>
+                </p>
+            </div>
+
+            <div id="final">
+                <p>La Mejor Tienda en productos saludables</p>
+            </div>
+        </footer>
     </form>
 
-    </body>
+</body>
 </html>
