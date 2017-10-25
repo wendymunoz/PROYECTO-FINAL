@@ -66,8 +66,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\TheGreenHome.mdf" />
+    <Content Include="App_Data\TheGreenHome_log.ldf">
+      <DependentUpon>TheGreenHome.mdf</DependentUpon>
+    </Content>
     <Content Include="Blog.aspx" />
     <Content Include="CSS\Estilos.css" />
+    <Content Include="Imagenes\Bebida1.jpg" />
+    <Content Include="Imagenes\Bebida10.jpg" />
+    <Content Include="Imagenes\Bebida2.jpg" />
+    <Content Include="Imagenes\Bebida3.jpg" />
+    <Content Include="Imagenes\Bebida4.jpg" />
+    <Content Include="Imagenes\Bebida5.jpg" />
+    <Content Include="Imagenes\Bebida6.jpg" />
+    <Content Include="Imagenes\Bebida7.jpg" />
+    <Content Include="Imagenes\Bebida8.jpg" />
+    <Content Include="Imagenes\Bebida9.jpg" />
     <Content Include="Imagenes\logo1.png" />
     <Content Include="Nosotros.aspx" />
     <Content Include="packages.config" />
@@ -143,7 +157,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
@@ -157,7 +170,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49252</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
