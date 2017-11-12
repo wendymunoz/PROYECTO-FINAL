@@ -66,14 +66,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\TheGreenHome.mdf" />
-    <Content Include="App_Data\TheGreenHome_log.ldf">
-      <DependentUpon>TheGreenHome.mdf</DependentUpon>
-    </Content>
     <Content Include="Blog.aspx" />
     <Content Include="CSS\Estilos.css" />
     <Content Include="Imagenes\Bebida1.jpg" />
     <Content Include="Imagenes\Bebida10.jpg" />
+    <Content Include="Imagenes\Bebida11.jpg" />
+    <Content Include="Imagenes\Bebida12.jpg" />
+    <Content Include="Imagenes\Bebida13.jpg" />
     <Content Include="Imagenes\Bebida2.jpg" />
     <Content Include="Imagenes\Bebida3.jpg" />
     <Content Include="Imagenes\Bebida4.jpg" />
@@ -82,7 +81,45 @@
     <Content Include="Imagenes\Bebida7.jpg" />
     <Content Include="Imagenes\Bebida8.jpg" />
     <Content Include="Imagenes\Bebida9.jpg" />
+    <Content Include="Imagenes\Cereal1.jpg" />
+    <Content Include="Imagenes\Cereal10.jpg" />
+    <Content Include="Imagenes\Cereal11.jpg" />
+    <Content Include="Imagenes\Cereal12.jpg" />
+    <Content Include="Imagenes\Cereal13.jpg" />
+    <Content Include="Imagenes\Cereal14.jpg" />
+    <Content Include="Imagenes\Cereal15.jpg" />
+    <Content Include="Imagenes\Cereal16.jpg" />
+    <Content Include="Imagenes\Cereal17.jpg" />
+    <Content Include="Imagenes\Cereal2.jpg" />
+    <Content Include="Imagenes\Cereal3.jpg" />
+    <Content Include="Imagenes\Cereal4.jpg" />
+    <Content Include="Imagenes\Cereal5.jpg" />
+    <Content Include="Imagenes\Cereal6.jpg" />
+    <Content Include="Imagenes\Cereal7.jpg" />
+    <Content Include="Imagenes\Cereal8.jpg" />
+    <Content Include="Imagenes\Cereal9.jpg" />
     <Content Include="Imagenes\logo1.png" />
+    <Content Include="Imagenes\Reposteria1.jpg" />
+    <Content Include="Imagenes\Reposteria10.jpg" />
+    <Content Include="Imagenes\Reposteria2.jpg" />
+    <Content Include="Imagenes\Reposteria5.jpg" />
+    <Content Include="Imagenes\Reposteria6.jpg" />
+    <Content Include="Imagenes\Reposteria7.jpg" />
+    <Content Include="Imagenes\Reposteria8.jpg" />
+    <Content Include="Imagenes\Reposteria9.jpg" />
+    <Content Include="Imagenes\Resposteria3.jpg" />
+    <Content Include="Imagenes\Resposteria4.jpg" />
+    <Content Include="Imagenes\Snack1.jpg" />
+    <Content Include="Imagenes\Snack10.jpg" />
+    <Content Include="Imagenes\Snack11.jpg" />
+    <Content Include="Imagenes\Snack2.jpg" />
+    <Content Include="Imagenes\Snack3.jpg" />
+    <Content Include="Imagenes\Snack4.jpg" />
+    <Content Include="Imagenes\Snack5.jpg" />
+    <Content Include="Imagenes\Snack6.jpg" />
+    <Content Include="Imagenes\Snack7.jpg" />
+    <Content Include="Imagenes\Snack8.jpg" />
+    <Content Include="Imagenes\Snack9.jpg" />
     <Content Include="Nosotros.aspx" />
     <Content Include="packages.config" />
     <Content Include="PagMaestra.Master" />
@@ -157,6 +194,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
