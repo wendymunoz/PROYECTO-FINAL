@@ -36,25 +36,26 @@
         </div>
         <div class="clear"></div>
 
-        <nav>
+         <nav>
             <ul>
                 <li><a href="Default.aspx">Inicio</a></li>
-                <li><a href="TiendaOnline.aspx">Tienda Online</a>
+                <li><a href="TiendaOnline.aspx">Tienda Onlne</a>
                     <ul>
-                        <li><a href="TiendaOnline.aspx#Alimentos"><strong>ALIMENTOS VEGETARIANOS</strong></a></li>
-                        <li><a href="TiendaOnline.aspx#Bebidas"><strong>VITAMINAS Y SUPLEMENTOS</strong></a></li>
-                        <li><a href="TiendaOnline.aspx#Bebidas"><strong>BEBIDAS</strong></a></li>
-                        <li><a href="TiendaOnline.aspx#Cereales"><strong>CEREALES</strong></a></li>
-                        <li><a href="TiendaOnline.aspx#Snacks"><strong>SNACKS</strong></a></li>
-                        <li><a href="TiendaOnline.aspx#Comida"><strong>COMIDA PREPARADA</strong></a></li>
-                        <li><a href="TiendaOnline.aspx#Comida"><strong>REPOSTERIA</strong></a></li>
+                        <li><a href="Alimentos.aspx">ALIMENTOS VEGETARIANOS</a></li>
+                        <li><a href="Vitaminas.aspx">VITAMINAS Y SUPLEMENTOS</a></li>
+                        <li><a href="Bebidas.aspx">BEBIDAS</a></li>
+                        <li><a href="Cereales.aspx">CEREALES</a></li>
+                        <li><a href="Snacks.aspx">SNACKS</a></li>
+                        <li><a href="Comida.aspx">COMIDA PREPARADA</a></li>
+                        <li><a href="Reposteria.aspx">REPOSTERIA</a></li>
                     </ul>
+
                 </li>
                 <li><a href="Nosotros.aspx">Nosotros</a></li>
                 <li><a href="contacto.aspx">Contacto</a></li>
                 <li><a href="Blog.aspx">Blog</a></li>
             </ul>
-        </nav>
+                </nav>
     </header>
     <form id="form1" runat="server">
         <div>

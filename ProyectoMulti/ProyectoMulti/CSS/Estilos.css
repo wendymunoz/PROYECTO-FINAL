@@ -2,9 +2,10 @@
     font-family: Arial;
 }
 
-.alerta{
+.alerta {
     color: red;
 }
+
 #logo {
     text-align: center;
 }
@@ -83,91 +84,7 @@ header {
     clear: both;
 }
 
-/*MENU DESPLEGABLE*/
 
-nav {
-    top: 100px;
-    left: 0;
-    right: 0;
-    margin: 20px auto;
-    width: 100%;
-}
-
-    nav ul {
-        list-style: none;
-    }
-
-    nav > ul {
-        display: table;
-        width: 96.9%;
-        background: #25b13c;
-        position: relative;
-    }
-
-        nav > ul li {
-            display: table-cell;
-        }
-
-        /*Sub-menu*/
-        nav > ul > li:hover > ul {
-            display: block;
-            height: 100%;
-        }
-
-        nav > ul > li > ul {
-            display: block;
-            position: absolute;
-            background: #73e786;
-            left: 0;
-            right: 0;
-            overflow: hidden;
-            height: 0%;
-            -webkit-transition: all .3s ease;
-            -moz-transition: all .3s ease;
-            -o-transition: all .3s ease;
-            transition: all .3s ease;
-        }
-
-        nav > ul li a {
-            color: #fff;
-            display: block;
-            line-height: 20px;
-            padding: 20px;
-            position: relative;
-            text-align: center;
-            text-decoration: none;
-            -webkit-transition: all .3s ease;
-            -moz-transition: all .3s ease;
-            -o-transition: all .3s ease;
-            transition: all .3s ease;
-        }
-
-        nav > ul > li > ul > li a:hover {
-            background: #a9e21b;
-        }
-
-        nav > ul > li > a span {
-            background: #174459;
-            display: block;
-            height: 100%;
-            width: 100%;
-            left: 0;
-            position: absolute;
-            top: -55px;
-            -webkit-transition: all .3s ease;
-            -moz-transition: all .3s ease;
-            -o-transition: all .3s ease;
-            transition: all .3s ease;
-        }
-
-            nav > ul > li > a span .icon {
-                display: block;
-                line-height: 60px;
-            }
-
-        nav > ul > li > a:hover > span {
-            top: 0;
-        }
 
 /*DESPLEGABLE CUENTA*/
 
@@ -208,3 +125,54 @@ nav {
     color: white;
     padding: 2px;
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    text-align: center;
+}
+
+    nav ul {
+        list-style: none;
+    }
+
+        nav ul li {
+            background-color: limegreen;
+            border: solid 1px white;
+            width: 339px;
+            height: 35px;
+            float: left;
+            line-height: 35px;
+            position: relative;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #fff;
+                display: block;
+            }
+
+                nav ul li a:hover {
+                    background-color: #b0fa26;
+                    color: black;
+                }
+
+        nav ul ul {
+            position: absolute;
+            display: none;
+        }
+
+        nav ul li > ul li {
+            background-color: limegreen;
+            color: #333;
+            border: solid:1px white;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
