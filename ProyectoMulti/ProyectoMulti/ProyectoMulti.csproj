@@ -66,15 +66,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Alimentos.aspx" />
     <Content Include="App_Data\TheGreenHome.mdf" />
     <Content Include="App_Data\TheGreenHome_log.ldf">
       <DependentUpon>TheGreenHome.mdf</DependentUpon>
     </Content>
-    <Content Include="Bebidas.aspx" />
     <Content Include="Blog.aspx" />
-    <Content Include="Cereales.aspx" />
-    <Content Include="Comida.aspx" />
+    <Content Include="CSS\bootstrap-responsive.css" />
+    <Content Include="CSS\bootstrap-responsive.min.css" />
+    <Content Include="CSS\bootstrap-theme.css" />
+    <Content Include="CSS\bootstrap-theme.min.css" />
+    <Content Include="CSS\bootstrap.css" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\font-awesome.min.css" />
+    <Content Include="CSS\signup-form.css" />
+    <Content Include="MostrarProducto.aspx" />
     <Content Include="CSS\Estilos.css" />
     <Content Include="Imagenes\Bebida1.jpg" />
     <Content Include="Imagenes\Bebida10.jpg" />
@@ -132,6 +137,10 @@
     <Content Include="packages.config" />
     <Content Include="PagMaestra.Master" />
     <Content Include="contacto.aspx" />
+    <Content Include="CSS\bootstrap-theme.css.map" />
+    <Content Include="CSS\bootstrap-theme.min.css.map" />
+    <Content Include="CSS\bootstrap.css.map" />
+    <Content Include="CSS\bootstrap.min.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -143,27 +152,10 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Registro.aspx" />
-    <Content Include="Reposteria.aspx" />
-    <Content Include="Snacks.aspx" />
     <Content Include="TiendaOnline.aspx" />
-    <Content Include="Vitaminas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alimentos.aspx.cs">
-      <DependentUpon>Alimentos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Alimentos.aspx.designer.cs">
-      <DependentUpon>Alimentos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Bebidas.aspx.cs">
-      <DependentUpon>Bebidas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Bebidas.aspx.designer.cs">
-      <DependentUpon>Bebidas.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Blog.aspx.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -171,19 +163,12 @@
     <Compile Include="Blog.aspx.designer.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Cereales.aspx.cs">
-      <DependentUpon>Cereales.aspx</DependentUpon>
+    <Compile Include="MostrarProducto.aspx.cs">
+      <DependentUpon>MostrarProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cereales.aspx.designer.cs">
-      <DependentUpon>Cereales.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Comida.aspx.cs">
-      <DependentUpon>Comida.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Comida.aspx.designer.cs">
-      <DependentUpon>Comida.aspx</DependentUpon>
+    <Compile Include="MostrarProducto.aspx.designer.cs">
+      <DependentUpon>MostrarProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -224,33 +209,12 @@
     <Compile Include="Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Reposteria.aspx.cs">
-      <DependentUpon>Reposteria.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Reposteria.aspx.designer.cs">
-      <DependentUpon>Reposteria.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Snacks.aspx.cs">
-      <DependentUpon>Snacks.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Snacks.aspx.designer.cs">
-      <DependentUpon>Snacks.aspx</DependentUpon>
-    </Compile>
     <Compile Include="TiendaOnline.aspx.cs">
       <DependentUpon>TiendaOnline.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TiendaOnline.aspx.designer.cs">
       <DependentUpon>TiendaOnline.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vitaminas.aspx.cs">
-      <DependentUpon>Vitaminas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vitaminas.aspx.designer.cs">
-      <DependentUpon>Vitaminas.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

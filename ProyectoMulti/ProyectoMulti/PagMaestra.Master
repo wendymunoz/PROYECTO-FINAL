@@ -7,6 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <link href="CSS/Estilos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
+
 </head>
 <body>
     <header>
@@ -21,7 +23,7 @@
                 <span style="margin-top: 4px;"><img src="Imagenes/usuario.png" width="30" /></span>
                 <div class="dropdown-content">
                     <p><a href="#">Iniciar Sesión</a></p>
-                    <p><a href="#">Registrarse</a></p>
+                    <p><a href="Registro.aspx">Registrarse</a></p>
                 </div>
             </div>
 
@@ -42,13 +44,18 @@
                 <li><a href="Default.aspx">Inicio</a></li>
                 <li><a href="TiendaOnline.aspx">Tienda Onlne</a>
                     <ul>
-                        <li><a href="Alimentos.aspx">ALIMENTOS VEGETARIANOS</a></li>
-                        <li><a href="Vitaminas.aspx">VITAMINAS Y SUPLEMENTOS</a></li>
-                        <li><a href="Bebidas.aspx">BEBIDAS</a></li>
-                        <li><a href="Cereales.aspx">CEREALES</a></li>
-                        <li><a href="Snacks.aspx">SNACKS</a></li>
-                        <li><a href="Comida.aspx">COMIDA PREPARADA</a></li>
-                        <li><a href="Reposteria.aspx">REPOSTERIA</a></li>
+
+                        <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
+                            <ItemTemplate>
+                                <li>
+                                    <a href="MostrarProducto.aspx?idC=<%#Eval("CategoriaId")%>">
+                                        <%#Eval("Nombre") %>
+                                    </a>
+                                </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                        <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [Categoria]"></asp:SqlDataSource>
+                        
                     </ul>
 
                 </li>
