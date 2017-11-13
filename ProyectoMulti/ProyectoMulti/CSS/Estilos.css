@@ -119,7 +119,7 @@ header {
     padding: 10px 0;
 }
 
-#final {
+footer{
     text-align: center;
     background-color: gray;
     color: white;
@@ -142,7 +142,7 @@ nav {
         nav ul li {
             background-color: limegreen;
             border: solid 1px white;
-            width: 339px;
+            width: 333px;
             height: 35px;
             float: left;
             line-height: 35px;
@@ -175,4 +175,19 @@ nav {
 
         nav ul li:hover > ul {
             display: block;
+        }
+
+.content{
+    padding-top:100px;
+}
+.grilla {
+    width: 100%;
+}
+
+    .grilla td {
+        text-align: center;
+    }
+
+        .grilla td span {
+            font-weight: bold;
         }

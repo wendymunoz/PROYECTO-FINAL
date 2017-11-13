@@ -2,9 +2,15 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-    <div>
-        <p style="height: 300px;">&nbsp;</p>
-    </div>
+     <div id="correo">
+                <p>
+                    <span class="oferta">% Recibe ofertas en tu correo!</span>
+                    <span class="txtCorreo">
+                        <asp:TextBox ID="txtCorreo" CssClass="txtCorreo" runat="server" TextMode="Email"></asp:TextBox></span>
+                    <span class="txtEnviar">
+                        <asp:Button ID="Button1" CssClass="txtEnviar" runat="server" Text="Enviar" /></span>
+                </p>
+            </div>
 
 </asp:Content>
     

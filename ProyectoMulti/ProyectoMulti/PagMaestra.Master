@@ -35,7 +35,8 @@
             <img src="Imagenes/logo1.png" width="150" />
         </div>
         <div class="clear"></div>
-
+        </header>
+        <form id="form1" runat="server">
          <nav>
             <ul>
                 <li><a href="Default.aspx">Inicio</a></li>
@@ -55,30 +56,18 @@
                 <li><a href="contacto.aspx">Contacto</a></li>
                 <li><a href="Blog.aspx">Blog</a></li>
             </ul>
-                </nav>
-    </header>
-    <form id="form1" runat="server">
-        <div>
+    </nav>
+     
+        <div class="content">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+   </form>
 
-        <footer>
-            <div id="correo">
-                <p>
-                    <span class="oferta">% Recibe ofertas en tu correo!</span>
-                    <span class="txtCorreo">
-                        <asp:TextBox ID="txtCorreo" CssClass="txtCorreo" runat="server" TextMode="Email"></asp:TextBox></span>
-                    <span class="txtEnviar">
-                        <asp:Button ID="Button1" CssClass="txtEnviar" runat="server" Text="Enviar" /></span>
-                </p>
-            </div>
-
-            <div id="final">
+           <footer>
                 <p>La Mejor Tienda en productos saludables</p>
-            </div>
         </footer>
-    </form>
+
 
 </body>
 </html>
