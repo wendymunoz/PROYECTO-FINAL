@@ -2,36 +2,35 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <asp:FormView ID="FormView1" runat="server" DataSourceID="SqlDataSource1" DataKeyNames="DNI">
-        <ItemTemplate>
+    <asp:FormView ID="FormView1" runat="server" DataKeyNames="DNI" DataSourceID="SqlDataSource1" DefaultMode="Insert" >
+        <InsertItemTemplate>
             DNI:
-            <asp:Label Text='<%# Eval("DNI") %>' runat="server" ID="DNILabel" /><br />
+            <asp:TextBox Text='<%# Bind("DNI") %>' runat="server" ID="DNITextBox" /><br />
             Nombre:
-            <asp:Label Text='<%# Bind("Nombre") %>' runat="server" ID="NombreLabel" /><br />
+            <asp:TextBox Text='<%# Bind("Nombre") %>' runat="server" ID="NombreTextBox" /><br />
             Apellido:
-            <asp:Label Text='<%# Bind("Apellido") %>' runat="server" ID="ApellidoLabel" /><br />
+            <asp:TextBox Text='<%# Bind("Apellido") %>' runat="server" ID="ApellidoTextBox" /><br />
             Correo:
-            <asp:Label Text='<%# Bind("Correo") %>' runat="server" ID="CorreoLabel" /><br />
+            <asp:TextBox Text='<%# Bind("Correo") %>' runat="server" ID="CorreoTextBox" /><br />
             Contrasena:
-            <asp:Label Text='<%# Bind("Contrasena") %>' runat="server" ID="ContrasenaLabel" /><br />
+            <asp:TextBox Text='<%# Bind("Contrasena") %>' runat="server" ID="ContrasenaTextBox" /><br />
             Direccion:
-            <asp:Label Text='<%# Bind("Direccion") %>' runat="server" ID="DireccionLabel" /><br />
+            <asp:TextBox Text='<%# Bind("Direccion") %>' runat="server" ID="DireccionTextBox" /><br />
             Telefono:
-            <asp:Label Text='<%# Bind("Telefono") %>' runat="server" ID="TelefonoLabel" /><br />
-            <asp:LinkButton runat="server" Text="Editar" CommandName="Edit" ID="EditButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="Eliminar" CommandName="Delete" ID="DeleteButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="Nuevo" CommandName="New" ID="NewButton" CausesValidation="False" />
-        </ItemTemplate>
-    </asp:FormView>
+            <asp:TextBox Text='<%# Bind("Telefono") %>' runat="server" ID="TelefonoTextBox" /><br />
+            <asp:Button runat="server" Text="Registar" CommandName="Insert" ID="InsertButton" CausesValidation="True" />
+        </InsertItemTemplate>
 
-    <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' DeleteCommand="DELETE FROM [Usuarios] WHERE [DNI] = @DNI" InsertCommand="INSERT INTO [Usuarios] ([DNI], [Nombre], [Apellido], [Correo], [Contrasena], [Direccion], [Telefono]) VALUES (@DNI, @Nombre, @Apellido, @Correo, @Contrasena, @Direccion, @Telefono)" SelectCommand="SELECT * FROM [Usuarios]" UpdateCommand="UPDATE [Usuarios] SET [Nombre] = @Nombre, [Apellido] = @Apellido, [Correo] = @Correo, [Contrasena] = @Contrasena, [Direccion] = @Direccion, [Telefono] = @Telefono WHERE [DNI] = @DNI">
-       
+    </asp:FormView>
+    <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' InsertCommand="INSERT INTO Usuarios(DNI, Nombre, Apellido, Correo, Contrasena, Direccion, Telefono) VALUES (@dni, @nombre, @apellido, @correo, @contrasena, @direccion, @telefono)" SelectCommand="SELECT DNI, Nombre, Apellido, Correo, Contrasena, Direccion, Telefono FROM Usuarios">
         <InsertParameters>
-            <asp:Parameter Name="DNI" Type="String"></asp:Parameter>
-            <asp:Parameter Name="Nombre" Type="String"></asp:Parameter>
-            <asp:Parameter Name="Apellido" Type="String"></asp:Parameter>
-            <asp:Parameter Name="Correo" Type="String"></asp:Parameter>
-            <asp:Parameter Name="Contrasena" Type="String"></asp:Parameter>
-            <asp:Parameter Name="Direccion" Type="String"></asp:Parameter>
-            <asp:Parameter Name="Telefono" Type="String"></asp:Parameter>
+            <asp:Parameter Name="dni"></asp:Parameter>
+            <asp:Parameter Name="Nombre"></asp:Parameter>
+            <asp:Parameter Name="Apellido"></asp:Parameter>
+            <asp:Parameter Name="correo"></asp:Parameter>
+            <asp:Parameter Name="contrasena"></asp:Parameter>
+            <asp:Parameter Name="direccion"></asp:Parameter>
+            <asp:Parameter Name="telefono"></asp:Parameter>
         </InsertParameters>
     </asp:SqlDataSource>
 </asp:Content>
