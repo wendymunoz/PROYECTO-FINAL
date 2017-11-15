@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <div id="registrar">
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="DNI" DataSourceID="SqlDataSource1" DefaultMode="Insert" >
         <InsertItemTemplate>
             DNI:
@@ -18,10 +19,13 @@
             <asp:TextBox Text='<%# Bind("Direccion") %>' runat="server" ID="DireccionTextBox" /><br />
             Telefono:
             <asp:TextBox Text='<%# Bind("Telefono") %>' runat="server" ID="TelefonoTextBox" /><br />
+            <br />
             <asp:Button runat="server" Text="Registar" CommandName="Insert" ID="InsertButton" CausesValidation="True" />
+            <br />
         </InsertItemTemplate>
-
-    </asp:FormView>
+    
+        </asp:FormView>
+        </div>
     <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' InsertCommand="INSERT INTO Usuarios(DNI, Nombre, Apellido, Correo, Contrasena, Direccion, Telefono) VALUES (@dni, @nombre, @apellido, @correo, @contrasena, @direccion, @telefono)" SelectCommand="SELECT DNI, Nombre, Apellido, Correo, Contrasena, Direccion, Telefono FROM Usuarios">
         <InsertParameters>
             <asp:Parameter Name="dni"></asp:Parameter>

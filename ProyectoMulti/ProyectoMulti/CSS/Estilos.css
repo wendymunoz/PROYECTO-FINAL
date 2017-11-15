@@ -1,6 +1,8 @@
 ﻿body {
     font-family: Arial;
+
 }
+
 
 .alerta {
     color: red;
@@ -123,7 +125,8 @@ footer{
     text-align: center;
     background-color: gray;
     color: white;
-    padding: 2px;
+    padding: 15px;
+    height:20px;
 }
 
 * {
@@ -177,8 +180,12 @@ nav {
             display: block;
         }
 
+.contento {
+    
+    background: url('../Imagenes/fondo.jpg') repeat fixed;
+}
 .content{
-    padding-top:100px;
+    padding-top:60px;
 }
 .grilla {
     width: 100%;
@@ -191,3 +198,35 @@ nav {
         .grilla td span {
             font-weight: bold;
         }
+
+#registrar{
+    text-align:center;
+}
+.fondo {
+    border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 51px 49px;
+    -webkit-border-radius: 50px 50px 51px 49px;
+    border: 2px solid #968d96;
+    background-color: white;
+    margin-left: 90px;
+    margin-top: 20px;
+    width: 250px;
+    margin-bottom:10px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+.button:hover {
+        background-color: #3e8e41;
+    }
