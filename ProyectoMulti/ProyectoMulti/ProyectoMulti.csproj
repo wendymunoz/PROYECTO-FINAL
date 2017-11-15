@@ -79,6 +79,7 @@
     <Content Include="CSS\bootstrap.min.css" />
     <Content Include="CSS\font-awesome.min.css" />
     <Content Include="CSS\signup-form.css" />
+    <Content Include="Imagenes\Delivery.jpg" />
     <Content Include="MostrarProducto.aspx" />
     <Content Include="CSS\Estilos.css" />
     <Content Include="Imagenes\Bebida1.jpg" />
