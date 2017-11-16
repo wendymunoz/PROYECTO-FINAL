@@ -8,27 +8,28 @@
     <title></title>
     <link href="CSS/Estilos.css" rel="stylesheet" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
-
 </head>
 <body>
     <header>
 
-        <div class="izq"></div>
-        
         <div class="sesion">
 
-            <a href="#" class="boton verde">Subscribete aquí</a>
+            <a href="Registro.aspx">
+                <img src="Imagenes/boton.png" style="margin-top: 20px; margin-right: 5px;" height="30" /></a>
 
             <div class="dropdown">
-                <span style="margin-top: 4px;"><img src="Imagenes/usuario.png" width="30" /></span>
+                <span>
+                    <img src="Imagenes/usuario.png" width="30" /></span>
                 <div class="dropdown-content">
-                    <p><a href="#">Iniciar Sesión</a></p>
+                    <p><a href="#">Ingresa</a></p>
+                    <hr>
                     <p><a href="Registro.aspx">Registrarse</a></p>
                 </div>
             </div>
 
             <div class="dropdown">
-                <span><img src="Imagenes/carrito.png" width="30" /></span>
+                <span>
+                    <img src="Imagenes/carrito.png" width="30" /></span>
             </div>
 
         </div>
@@ -37,12 +38,12 @@
             <img src="Imagenes/logo1.png" width="150" />
         </div>
         <div class="clear"></div>
-        </header>
-        <form id="form1" runat="server">
-         <nav>
+    </header>
+    <form id="form1" runat="server">
+        <nav>
             <ul>
                 <li><a href="Default.aspx">Inicio</a></li>
-                <li><a href="TiendaOnline.aspx">Tienda Onlne</a>
+                <li><a href="TiendaOnline.aspx">Tienda Online</a>
                     <ul>
 
                         <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
@@ -55,7 +56,7 @@
                             </ItemTemplate>
                         </asp:Repeater>
                         <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [Categoria]"></asp:SqlDataSource>
-                        
+
                     </ul>
 
                 </li>
@@ -63,17 +64,17 @@
                 <li><a href="contacto.aspx">Contacto</a></li>
                 <li><a href="Blog.aspx">Blog</a></li>
             </ul>
-    </nav>
-     
+        </nav>
+
         <div class="content">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-   </form>
+    </form>
 
-           <footer>
-                <p>La Mejor Tienda en productos saludables</p>
-        </footer>
+    <footer>
+        <p>La Mejor Tienda en productos saludables</p>
+    </footer>
 
 
 </body>

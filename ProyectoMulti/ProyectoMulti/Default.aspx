@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PagMaestra.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ProyectoMulti.Default" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
-    
-   
+    <div>
+        <img class="delivery" src="Imagenes/delivery.JPG" />
+    </div>  
 
      <div id="correo">
                 <p>

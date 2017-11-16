@@ -94,6 +94,7 @@
     <Content Include="Imagenes\Alimentos7.jpg" />
     <Content Include="Imagenes\Alimentos8.jpg" />
     <Content Include="Imagenes\Alimentos9.jpg" />
+    <Content Include="Imagenes\boton.png" />
     <Content Include="Imagenes\Comida1.jpg" />
     <Content Include="Imagenes\Comida2.jpg" />
     <Content Include="Imagenes\Comida3.jpg" />
@@ -101,8 +102,14 @@
     <Content Include="Imagenes\Comida5.jpg" />
     <Content Include="Imagenes\Comida6.png" />
     <Content Include="Imagenes\Comida7.jpg" />
+    <Content Include="Imagenes\delivery.JPG" />
+    <Content Include="Imagenes\email.jpg" />
+    <Content Include="Imagenes\email.png" />
     <Content Include="Imagenes\fondo.jpg" />
+    <Content Include="Imagenes\fondo2.jpg" />
     <Content Include="Imagenes\fondo3.jpg" />
+    <Content Include="Imagenes\header.JPG" />
+    <Content Include="Imagenes\vegetables.jpg" />
     <Content Include="Imagenes\Vitamina1.jpg" />
     <Content Include="Imagenes\Vitamina12.jpg" />
     <Content Include="Imagenes\Vitamina13.jpg" />

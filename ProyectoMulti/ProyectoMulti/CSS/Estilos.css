@@ -3,7 +3,6 @@
 
 }
 
-
 .alerta {
     color: red;
 }
@@ -34,6 +33,9 @@
 header {
     height: 100px;
     position: relative;
+    background-image: url('../Imagenes/header.jpg');
+    background-size:cover;
+
 }
 
 .izq {
@@ -48,39 +50,11 @@ header {
 
 .sesion {
     float: right;
-    width: 35%;
+    width:30%;
     text-align: center;
     padding-top: 5px;
+    vertical-align: middle;
 }
-
-.boton {
-    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    color: #433e3e;
-    font-weight: bold;
-    background: #a9e21b;
-    padding: 7px 20px;
-    white-space: nowrap;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 100px;
-    margin: 10px 5px;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
-.verde {
-    background: #bbef3b;
-    box-shadow: 0px 5px 0px 0px #aadb31;
-}
-
-    .verde:hover {
-        background: #9ccc27;
-    }
 
 .clear {
     clear: both;
@@ -93,9 +67,11 @@ header {
 .dropdown {
     position: relative;
     display: inline-block;
+    
 }
 
 .dropdown-content {
+    
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -104,11 +80,17 @@ header {
     padding: 12px 16px;
     z-index: 1;
     text-align: left;
+    border-radius:7px;
 }
 
     .dropdown-content a {
         text-decoration: none;
         color: #333;
+    }
+
+    .dropdown-content a:hover{
+        font-size:18px;
+        color:forestgreen;
     }
 
 .dropdown:hover .dropdown-content {
@@ -136,16 +118,18 @@ footer{
 
 nav {
     text-align: center;
+    display:table;
+    margin:auto;
 }
 
     nav ul {
         list-style: none;
+        
     }
 
         nav ul li {
             background-color: limegreen;
-            border: solid 1px white;
-            width: 260px;
+            width: 252px;
             height: 35px;
             float: left;
             line-height: 35px;
@@ -153,6 +137,11 @@ nav {
             padding-top: 10px;
             padding-bottom: 10px;
         }
+
+            nav ul li:hover {
+                background-color: #b0fa26;
+                color: black;
+            }
 
             nav ul li a {
                 text-decoration: none;
@@ -181,12 +170,11 @@ nav {
         }
 
 .contento {
-    
     background: url('../Imagenes/fondo.jpg') repeat fixed;
+    padding:30px;
 }
-.content{
-    padding-top:60px;
-}
+
+
 .grilla {
     width: 100%;
 }
@@ -230,3 +218,64 @@ nav {
 .button:hover {
         background-color: #3e8e41;
     }
+
+.contText{
+    padding:40px;
+    text-align:justify;
+    width:60%;
+    display:inline-block;
+}
+
+.contImg {
+    width: 30%;
+    display:inline-block;
+    vertical-align:top;
+    padding-top:60px;
+}
+
+h1{
+    padding:30px 0 0 40px;
+}
+
+p{
+    padding:6px;
+}
+
+.ib {    
+    display: inline-block;
+    font-size: 18px;
+    padding: 2em 0 0 2em;
+    width: 30%;
+    text-align:right;
+}
+
+.ib-ib {
+    display: inline-block;
+    width: 30%;
+    height:100px;
+    padding-left:40px;
+}
+
+.mensaje {
+    display: inline-block;
+    font-size: 18px;
+    padding: 2em 0 0 2em;
+    width: 63%;
+    text-align: right;
+}
+
+.textBox{
+    border-radius:7px;
+    height:25px;
+    border: solid 1px limegreen;
+    margin-left:4px;
+    width:70%;
+}
+
+.clear{
+    clear:both;
+}
+
+img .delivery{
+   width:100%;
+}
