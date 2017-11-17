@@ -71,6 +71,12 @@
       <DependentUpon>TheGreenHome.mdf</DependentUpon>
     </Content>
     <Content Include="Blog.aspx" />
+    <Content Include="Content\slick\ajax-loader.gif" />
+    <Content Include="Content\slick\fonts\slick.svg" />
+    <Content Include="Content\slick\slick-theme.css" />
+    <Content Include="Content\slick\slick.css" />
+    <Content Include="Content\slick\slick.js" />
+    <Content Include="Content\slick\slick.min.js" />
     <Content Include="CSS\bootstrap-responsive.css" />
     <Content Include="CSS\bootstrap-responsive.min.css" />
     <Content Include="CSS\bootstrap-theme.css" />
@@ -106,7 +112,6 @@
     <Content Include="Imagenes\email.jpg" />
     <Content Include="Imagenes\email.png" />
     <Content Include="Imagenes\fondo.jpg" />
-    <Content Include="Imagenes\fondo2.jpg" />
     <Content Include="Imagenes\fondo3.jpg" />
     <Content Include="Imagenes\header.JPG" />
     <Content Include="Imagenes\vegetables.jpg" />
@@ -183,6 +188,14 @@
     <Content Include="CSS\bootstrap-theme.min.css.map" />
     <Content Include="CSS\bootstrap.css.map" />
     <Content Include="CSS\bootstrap.min.css.map" />
+    <Content Include="Content\slick\config.rb" />
+    <Content Include="Content\slick\fonts\slick.eot" />
+    <Content Include="Content\slick\fonts\slick.ttf" />
+    <Content Include="Content\slick\fonts\slick.woff" />
+    <Content Include="Content\slick\slick-theme.less" />
+    <Content Include="Content\slick\slick-theme.scss" />
+    <Content Include="Content\slick\slick.less" />
+    <Content Include="Content\slick\slick.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

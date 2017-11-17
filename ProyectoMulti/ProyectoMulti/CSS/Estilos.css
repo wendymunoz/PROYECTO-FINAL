@@ -279,3 +279,25 @@ p{
 img .delivery{
    width:100%;
 }
+
+.cont_ofertas {
+    margin: auto;
+    margin-left: 30px;
+    width:80%;
+    float:right;
+}
+
+    .cont_ofertas:hover {
+        -webkit-transform: scale(1.25);
+        -moz-transform: scale(1.25);
+        -ms-transform: scale(1.25);
+        -o-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+
+
+h2, span .nombre{
+    text-align:center;
+    font-size:medium;
+    font-weight:normal;
+}

@@ -8,6 +8,10 @@
     <title></title>
     <link href="CSS/Estilos.css" rel="stylesheet" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Content/slick/slick.min.js"></script>
+    <link href="Content/slick/slick.css" rel="stylesheet" />
+    <link href="Content/slick/slick-theme.css" rel="stylesheet" />
 </head>
 <body>
     <header>
