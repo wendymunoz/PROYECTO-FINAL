@@ -29,8 +29,8 @@
                 <asp:TextBox ID="txtCorreo" CssClass="txtCorreo" runat="server" TextMode="Email"></asp:TextBox>
             </span>
             <span class="txtEnviar">
-                <asp:Button ID="Button1" CssClass="txtEnviar" runat="server" Text="Enviar" />
-            </span>
+                <asp:Button ID="Button1" CssClass="txtEnviar" runat="server" Text="Enviar" OnClick="Button1_Click1" />
+            </span> 
         </p>
     </div>
     <script>

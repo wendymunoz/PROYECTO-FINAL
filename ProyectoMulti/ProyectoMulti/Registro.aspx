@@ -1,31 +1,52 @@
 ﻿<%@ Page UnobtrusiveValidationMode ="None" Title="" Language="C#" MasterPageFile="~/PagMaestra.Master" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="ProyectoMulti.Registro" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <div id="registrar">
-    <asp:FormView ID="FormView1" runat="server" DataKeyNames="DNI" DataSourceID="SqlDataSource1" DefaultMode="Insert" >
+    <h1>Regístrate</h1>
+    <asp:FormView ID="FormView1" runat="server" DataKeyNames="DNI" DataSourceID="SqlDataSource1" DefaultMode="Insert" Width="1270px" >
         <InsertItemTemplate>
-            DNI:
-            <asp:TextBox Text='<%# Bind("DNI") %>' runat="server" ID="DNITextBox" /><br />
-            Nombre:
-            <asp:TextBox Text='<%# Bind("Nombre") %>' runat="server" ID="NombreTextBox" /><br />
-            Apellido:
-            <asp:TextBox Text='<%# Bind("Apellido") %>' runat="server" ID="ApellidoTextBox" /><br />
-            Correo:
-            <asp:TextBox Text='<%# Bind("Correo") %>' runat="server" ID="CorreoTextBox" /><br />
-            Contrasena:
-            <asp:TextBox Text='<%# Bind("Contrasena") %>' runat="server" ID="ContrasenaTextBox" /><br />
-            Direccion:
-            <asp:TextBox Text='<%# Bind("Direccion") %>' runat="server" ID="DireccionTextBox" /><br />
-            Telefono:
-            <asp:TextBox Text='<%# Bind("Telefono") %>' runat="server" ID="TelefonoTextBox" /><br />
-            <br />
-            <asp:Button runat="server" Text="Registar" CommandName="Insert" ID="InsertButton" CausesValidation="True" />
-            <br />
+            <div class="ib">
+                <p>
+                    Nombre:
+                    <asp:TextBox Text='<%# Bind("Nombre") %>' CssClass="textBox" runat="server" ID="NombreTextBox" /><br />
+                </p>
+                <p>
+                    DNI:
+                    <asp:TextBox Text='<%# Bind("DNI") %>' CssClass="textBox" runat="server" ID="DNITextBox" /><br />
+                </p>
+                <p>
+                    Telefono:
+                    <asp:TextBox Text='<%# Bind("Telefono") %>' CssClass="textBox" runat="server" ID="TelefonoTextBox" /><br />
+                </p>
+                <p>
+                    Correo:
+                    <asp:TextBox Text='<%# Bind("Correo") %>' CssClass="textBox" runat="server" ID="CorreoTextBox" /><br />
+                </p>
+            </div>
+            <div class="ib">
+                <p>
+                    Apellido:
+                    <asp:TextBox Text='<%# Bind("Apellido") %>' CssClass="textBox" runat="server" ID="ApellidoTextBox" /><br />
+                </p>
+                <p>
+                    Direccion:
+                    <asp:TextBox Text='<%# Bind("Direccion") %>' CssClass="textBox" runat="server" ID="DireccionTextBox" /><br />
+                </p>
+                <p>
+                    Celular:
+                    <asp:TextBox Text='<%# Bind("Celular") %>' CssClass="textBox" runat="server" ID="CelularTextBox" /><br />
+                </p>
+                <p>
+                    Contrasena:
+                    <asp:TextBox Text='<%# Bind("Contrasena") %>' CssClass="textBox" runat="server" ID="ContrasenaTextBox" /><br />
+                </p>
+            </div>
+            <div class="mensaje">
+                <p style="text-align: center">
+                <asp:Button runat="server" Text="Registrar" CssClass="button" CommandName="Insert" ID="InsertButton" CausesValidation="True" />
+                </p>
+            </div>
         </InsertItemTemplate>
-    
-        </asp:FormView>
-        </div>
+    </asp:FormView>
     <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' InsertCommand="INSERT INTO Usuarios(DNI, Nombre, Apellido, Correo, Contrasena, Direccion, Telefono) VALUES (@dni, @nombre, @apellido, @correo, @contrasena, @direccion, @telefono)" SelectCommand="SELECT DNI, Nombre, Apellido, Correo, Contrasena, Direccion, Telefono FROM Usuarios">
         <InsertParameters>
             <asp:Parameter Name="dni"></asp:Parameter>
