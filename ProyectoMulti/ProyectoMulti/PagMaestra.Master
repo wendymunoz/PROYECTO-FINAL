@@ -25,7 +25,7 @@
                 <span>
                     <img src="Imagenes/usuario.png" width="30" /></span>
                 <div class="dropdown-content">
-                    <p><a href="#">Ingresa</a></p>
+                    <p><a href="login.aspx">Ingresa</a></p>
                     <hr>
                     <p><a href="Registro.aspx">Registrarse</a></p>
                 </div>
