@@ -129,7 +129,7 @@ nav {
 
         nav ul li {
             background-color: limegreen;
-            width: 252px;
+            width: 269px;
             height: 35px;
             float: left;
             line-height: 35px;
@@ -222,6 +222,7 @@ nav {
 .contText{
     padding:40px;
     text-align:justify;
+    font-family:Tahoma;
     width:60%;
     display:inline-block;
 }
@@ -276,7 +277,7 @@ p{
     clear:both;
 }
 
-img .delivery{
+.delivery{
    width:100%;
 }
 
@@ -301,3 +302,23 @@ h2, span .nombre{
     font-size:medium;
     font-weight:normal;
 }
+
+.quienessomos{
+    text-align:center;
+
+}
+
+td {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 20px;
+    text-align: justify;
+    vertical-align: top;
+    width: 50%;
+}
+
+    td.first {
+        border-right: 5px solid forestgreen;
+    }
+
+

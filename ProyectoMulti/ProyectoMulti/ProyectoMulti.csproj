@@ -77,14 +77,6 @@
     <Content Include="Content\slick\slick.css" />
     <Content Include="Content\slick\slick.js" />
     <Content Include="Content\slick\slick.min.js" />
-    <Content Include="CSS\bootstrap-responsive.css" />
-    <Content Include="CSS\bootstrap-responsive.min.css" />
-    <Content Include="CSS\bootstrap-theme.css" />
-    <Content Include="CSS\bootstrap-theme.min.css" />
-    <Content Include="CSS\bootstrap.css" />
-    <Content Include="CSS\bootstrap.min.css" />
-    <Content Include="CSS\font-awesome.min.css" />
-    <Content Include="CSS\signup-form.css" />
     <Content Include="Imagenes\Alimentos1.jpg" />
     <Content Include="Imagenes\Alimentos10.jpg" />
     <Content Include="Imagenes\Alimentos11.jpg" />
@@ -114,6 +106,10 @@
     <Content Include="Imagenes\fondo.jpg" />
     <Content Include="Imagenes\fondo3.jpg" />
     <Content Include="Imagenes\header.JPG" />
+    <Content Include="Imagenes\Receta1.png" />
+    <Content Include="Imagenes\Receta2.png" />
+    <Content Include="Imagenes\Receta3.jpg" />
+    <Content Include="Imagenes\Receta4.jpg" />
     <Content Include="Imagenes\vegetables.jpg" />
     <Content Include="Imagenes\Vitamina1.jpg" />
     <Content Include="Imagenes\Vitamina12.jpg" />
@@ -185,10 +181,6 @@
     <Content Include="packages.config" />
     <Content Include="PagMaestra.Master" />
     <Content Include="contacto.aspx" />
-    <Content Include="CSS\bootstrap-theme.css.map" />
-    <Content Include="CSS\bootstrap-theme.min.css.map" />
-    <Content Include="CSS\bootstrap.css.map" />
-    <Content Include="CSS\bootstrap.min.css.map" />
     <Content Include="Content\slick\config.rb" />
     <Content Include="Content\slick\fonts\slick.eot" />
     <Content Include="Content\slick\fonts\slick.ttf" />

@@ -1,7 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PagMaestra.Master" AutoEventWireup="true" CodeBehind="Nosotros.aspx.cs" Inherits="ProyectoMulti.Nosotros" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>¿Quiénes Somos?</h1>
+    
+        <div class="quienessomos">
+        <h1>¿Quiénes Somos?</h1>
+         </div>
+
     <div class="contText">
         <p>The Green Home es un proyecto que empezó a gestarse este año, por y para el bienestar de las personas. En nuestra tienda online ofrecemos una amplia gama de productos veganos y vegetarios, además de productos sin gluten.</p>
         <p>Nos preocupa la forma de alimentarnos, la calidad de los productos, su origen, especialmente que sea free crueltry, y como llega hasta el consumidor final. Por lo que en cada producto encontrarás una forma sana y natural de alimentarte,libre de maltrato animal, así como de cuidar tu salud y tu cuerpo con los cosméticos, los suplementos y las vitaminas.</p>
