@@ -19,51 +19,33 @@ namespace ProyectoMulti
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
-            SendMail();
-        }
+            System.Net.Mail.MailMessage mmsg = new System.Net.Mail.MailMessage();
+            mmsg.To.Add(txtCorreo.Text);
+            mmsg.Subject = "Suscripcion Ofertas";
+            mmsg.SubjectEncoding = System.Text.Encoding.UTF8;
+            mmsg.Body = "Querido Suscriptor ya esta suscrito , Apartir de ahora recibira las ofertas";
+            mmsg.BodyEncoding = System.Text.Encoding.UTF8;
+            mmsg.IsBodyHtml = true;
+            mmsg.From = new System.Net.Mail.MailAddress("suscripcionthegreenhomes@gmail.com");
 
-        public void SendMail()
-        {
-            SmtpClient smtp = new SmtpClient();
-            smtp.Port = 25;//El puerto debe ser correctamente configurado.
-            smtp.Timeout = 100;//Tiempo de conexión
-            smtp.Host = "smtp.hotmail.com";
-            smtp.EnableSsl = true;
+            System.Net.Mail.SmtpClient cliente = new System.Net.Mail.SmtpClient();
+            cliente.Credentials = new System.Net.NetworkCredential("suscripcionthegreenhomes@gmail.com", "multi2017");
+            cliente.Port = 587;
+            cliente.EnableSsl = true;
+            cliente.Host = "smtp.gmail.com";
 
-            //Objeto referente a quién envía el correo
-            MailAddress from =
-                new MailAddress(
-                    txtCorreo.Text,
-                    "Estimado Cliente",//Nombre asociado a la dirección
-                    System.Text.Encoding.UTF8
-                    );
-
-            var mails = txtCorreo.Text.Split(';');
-
-            using (MailMessage message = new MailMessage())
+            try
             {
-                message.From = from;
-                message.Subject = "Correo de prueba";
-                //Cargamos el contenido del mail.
-                message.Body = "HOLI";
-                message.Priority = MailPriority.Normal;
+                cliente.Send(mmsg);
+                txtCorreo.Text = "";
 
-                //Cargamos todos los mails que se ingresaron
-                //en el campor de text
-                foreach (string dir in mails)
-                    message.To.Add(dir);
-                try
-                {
-                    //Se envía el mail
-                    smtp.Send(message);
-                }
-
-                catch (SmtpException ex)
-
-                {
-                    throw;
-                }
+            }
+            catch(Exception)
+            {
+                throw;
             }
         }
+
+     
     }
 }
