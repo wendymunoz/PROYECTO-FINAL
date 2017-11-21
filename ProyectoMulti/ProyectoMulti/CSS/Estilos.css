@@ -129,7 +129,7 @@ nav {
 
         nav ul li {
             background-color: limegreen;
-            width: 269px;
+            width: 252px;
             height: 35px;
             float: left;
             line-height: 35px;
@@ -321,4 +321,22 @@ td {
         border-right: 5px solid forestgreen;
     }
 
+#imag {
+    
+    padding-top: 3%;
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+#imag img{
+    border-radius:40px;
+}
+
+#desc-p {
+    padding-top: 3%;
+    width: 38%;
+    display: inline-block;
+}
 
