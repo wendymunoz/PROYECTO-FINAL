@@ -61,7 +61,7 @@ namespace ProyectoMulti
                 catch (SmtpException ex)
 
                 {
-                    eMailSent = false;
+                    throw;
                 }
             }
         }

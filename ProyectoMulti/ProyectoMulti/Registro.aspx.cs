@@ -18,5 +18,10 @@ namespace ProyectoMulti
         {
 
         }
+
+        protected void CreateUserWizard1_CreatedUser(object sender, EventArgs e)
+        {
+
+        }
     }
 }

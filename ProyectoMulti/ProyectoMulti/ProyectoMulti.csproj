@@ -126,6 +126,7 @@
     <Content Include="Imagenes\Vitamina7.jpg" />
     <Content Include="Imagenes\Vitamina8.jpg" />
     <Content Include="Imagenes\Vitamina9.jpg" />
+    <Content Include="login.aspx" />
     <Content Include="MostrarProducto.aspx" />
     <Content Include="CSS\Estilos.css" />
     <Content Include="Imagenes\Bebida1.jpg" />
@@ -217,6 +218,13 @@
     </Compile>
     <Compile Include="Blog.aspx.designer.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MostrarProducto.aspx.cs">
       <DependentUpon>MostrarProducto.aspx</DependentUpon>
