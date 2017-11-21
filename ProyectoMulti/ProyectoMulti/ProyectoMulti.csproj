@@ -66,6 +66,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\EditarProducto.aspx" />
+    <Content Include="Admin\Productos.aspx" />
+    <Content Include="Admin\RegistrarProducto.aspx" />
     <Content Include="App_Data\TheGreenHome.mdf" />
     <Content Include="App_Data\TheGreenHome_log.ldf">
       <DependentUpon>TheGreenHome.mdf</DependentUpon>
@@ -204,6 +208,34 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditarProducto.aspx.cs">
+      <DependentUpon>EditarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditarProducto.aspx.designer.cs">
+      <DependentUpon>EditarProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RegistrarProducto.aspx.cs">
+      <DependentUpon>RegistrarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RegistrarProducto.aspx.designer.cs">
+      <DependentUpon>RegistrarProducto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Blog.aspx.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
