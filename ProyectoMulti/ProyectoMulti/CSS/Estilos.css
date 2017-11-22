@@ -133,7 +133,7 @@ nav {
 
         nav ul li {
             background-color: limegreen;
-            width: 235px;
+            width: 284px;
             height: 35px;
             float: left;
             line-height: 35px;
@@ -348,5 +348,9 @@ h1{
     padding-top: 3%;
     width: 38%;
     display: inline-block;
+}
+
+.ocultar{
+    visibility:hidden;
 }
 

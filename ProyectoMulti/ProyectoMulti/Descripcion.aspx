@@ -29,7 +29,7 @@
                     <h3>Descripcion:</h3>
                     <asp:Label ID="DescripcionLabel" runat="server" Text='<%# Eval("Descripcion") %>' /><br />
                     <br />
-                    <asp:Button ID="Button1" CssClass="button" runat="server" Text="Agregar a Carrito" />
+                    
                 </div>
             </ItemTemplate>
         </asp:Repeater>
