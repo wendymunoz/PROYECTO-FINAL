@@ -11,7 +11,7 @@ namespace ProyectoMulti
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblHola.Text = (Session["Usuarios"]).ToString();
+            
         }
     }
 }

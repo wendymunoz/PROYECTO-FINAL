@@ -47,7 +47,7 @@
                 &nbsp;</td>
             <td colspan="2">
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
-                    Width="505px" OnRowCommand="GridView1_RowCommand" OnRowDeleting="GridView1_RowDeleting">
+                    Width="505px" OnRowCommand="GridView1_RowCommand">
                     <Columns>
                         <asp:TemplateField HeaderText="Quitar">
                             <ItemTemplate>

@@ -330,24 +330,6 @@
   <ItemGroup>
     <Folder Include="Models\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BDConexion\BDConexion.csproj">
-      <Project>{ee1b051f-5e40-471b-b5b9-a0cb196227c4}</Project>
-      <Name>BDConexion</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ComponenteDatos\ComponenteDatos.csproj">
-      <Project>{a301089c-7746-4424-bcf5-9280fb2f6bc3}</Project>
-      <Name>ComponenteDatos</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ComponenteEntidades\ComponenteEntidades.csproj">
-      <Project>{f8b29ce2-4300-49f9-80dd-5d586efd241e}</Project>
-      <Name>ComponenteEntidades</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ComponenteNegocio\ComponenteNegocio.csproj">
-      <Project>{3e41a3de-595d-4add-b1da-d2e05d6f0875}</Project>
-      <Name>ComponenteNegocio</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
