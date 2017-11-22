@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>Imagenes/publicidad1.jpg</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <Impressions>100</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>Imagenes/publicidad2.jpg</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <Impressions>100</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>Imagenes/publicidad3.jpg</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <Impressions>100</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>Imagenes/publicidad4.jpg</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <Impressions>100</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>Imagenes/publicidad5.jpg</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <Impressions>100</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>Imagenes/publicidad6.jpg</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <Impressions>100</Impressions>
+  </Ad>
+</Advertisements>

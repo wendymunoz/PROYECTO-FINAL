@@ -27,7 +27,7 @@
                     <asp:TextBox runat="server" Text='<%# Bind("Precio") %>' ID="TextBox2"></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
-                    <span><%#Eval("Precio","{0:c}")%></span>
+                    <span>S/.<%#Eval("Precio")%></span>
                 </ItemTemplate>
             </asp:TemplateField>
 
@@ -87,4 +87,9 @@
             <asp:Parameter Name="ProductoId" Type="Int32"></asp:Parameter>
         </UpdateParameters>
     </asp:SqlDataSource>
+    <a href="Administrador.aspx">Regresar a administrador</a>
+    <br />
+    <a href="RegistrarProducto.aspx">Añadir Nuevo Producto</a>
+    <br />
+
 </asp:Content>

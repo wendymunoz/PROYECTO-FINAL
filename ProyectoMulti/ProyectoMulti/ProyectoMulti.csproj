@@ -67,11 +67,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Administrador.aspx" />
+    <Content Include="App_Data\Publicidad.xml" />
     <Content Include="App_Data\TheGreenHome.mdf" />
     <Content Include="App_Data\TheGreenHome_log.ldf">
       <DependentUpon>TheGreenHome.mdf</DependentUpon>
     </Content>
     <Content Include="Blog.aspx" />
+    <Content Include="Carrito.aspx" />
     <Content Include="Content\slick\ajax-loader.gif" />
     <Content Include="Content\slick\fonts\slick.svg" />
     <Content Include="Content\slick\slick-theme.css" />
@@ -109,6 +111,12 @@
     <Content Include="Imagenes\fondo.jpg" />
     <Content Include="Imagenes\fondo3.jpg" />
     <Content Include="Imagenes\header.JPG" />
+    <Content Include="Imagenes\publicidad1.jpg" />
+    <Content Include="Imagenes\publicidad2.jpg" />
+    <Content Include="Imagenes\publicidad3.jpg" />
+    <Content Include="Imagenes\publicidad4.jpg" />
+    <Content Include="Imagenes\publicidad5.jpg" />
+    <Content Include="Imagenes\publicidad6.png" />
     <Content Include="Imagenes\Receta1.png" />
     <Content Include="Imagenes\Receta2.png" />
     <Content Include="Imagenes\Receta3.jpg" />
@@ -222,6 +230,13 @@
     </Compile>
     <Compile Include="Blog.aspx.designer.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
     </Compile>
     <Compile Include="Descripcion.aspx.cs">
       <DependentUpon>Descripcion.aspx</DependentUpon>

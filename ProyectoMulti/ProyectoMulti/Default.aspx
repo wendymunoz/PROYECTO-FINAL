@@ -22,6 +22,11 @@
             <asp:QueryStringParameter QueryStringField="idC" DefaultValue="101" Name="CategoriaId"></asp:QueryStringParameter>
         </SelectParameters>
     </asp:SqlDataSource>
+
+    <div id="publicidad">
+        <asp:AdRotator ID="AdRotator1" runat="server" DataSourceID="XmlDataSource1" />
+        <asp:XmlDataSource runat="server" ID="XmlDataSource1" DataFile="~/App_Data/Publicidad.xml"></asp:XmlDataSource>
+    </div>
     <div id="correo">
         <p>
             <span class="oferta">% Recibe ofertas en tu correo!</span>

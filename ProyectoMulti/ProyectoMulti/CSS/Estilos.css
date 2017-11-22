@@ -321,6 +321,14 @@ td {
         border-right: 5px solid forestgreen;
     }
 
+h1{
+    font-family:'Franklin Gothic';
+}
+#publicidad {
+    
+    text-align:center;
+  
+}
 #imag {
     
     padding-top: 3%;

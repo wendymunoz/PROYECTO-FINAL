@@ -13,5 +13,11 @@ namespace ProyectoMulti.Admin
         {
 
         }
+
+        protected void FormView1_ItemInserted(object sender, FormViewInsertedEventArgs e)
+        {
+            Response.Redirect("Productos.aspx");
+                
+        }
     }
 }
