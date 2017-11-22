@@ -267,6 +267,8 @@
     <Compile Include="LoginAdmin.aspx.designer.cs">
       <DependentUpon>LoginAdmin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccesoBD.cs" />
+    <Compile Include="Models\Receta.cs" />
     <Compile Include="MostrarProducto.aspx.cs">
       <DependentUpon>MostrarProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -335,9 +337,7 @@
       <DependentUpon>TiendaOnline.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

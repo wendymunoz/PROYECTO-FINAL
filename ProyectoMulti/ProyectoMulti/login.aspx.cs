@@ -16,30 +16,5 @@ namespace ProyectoMulti
 
         }
 
-        protected void OnClick1_Button(object sender, EventArgs e)
-        {
-
-            int numero;
-            numero = 0;
-            DataView dvSql = (DataView)SqlDataSource1.Select(DataSourceSelectArguments.Empty);
-
-            if (dvSql.Count > 0)
-            {
-                numero = 1;
-            }
-            else
-            {
-                Response.Redirect("login.aspx");
-            }
-            if (numero == 1)
-            {
-                //Session["usuario"] = dvSql[0].DataView[0];
-                Session["Usuarios"] = dvSql[0].Row[0];
-                Response.Redirect("TiendaOnline.aspx");
-                
-            }
-
-        }
-
     }
 }

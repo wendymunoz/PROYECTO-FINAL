@@ -2,19 +2,21 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <h1>Inicia Sesión</h1>
-    <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label1" runat="server" Text="Label">Correo Electrónico: </asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="EmailTextBox" TextMode="Email" CssClass="textBox" runat="server" Width="246px"></asp:TextBox><br /><br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label2" runat="server" Text="Label">Contraseña: </asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="ContraTextBox" TextMode="Password" CssClass="textBox" runat="server" Width="270px"></asp:TextBox><br /><br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="Button1" runat="server" OnClick="OnClick1_Button" CssClass="button" Text="Iniciar" />
-   
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="consulta" SelectCommandType="StoredProcedure">
-        <SelectParameters>
-            <asp:ControlParameter ControlID="EmailTextBox" PropertyName="Text" Name="correo" Type="String"></asp:ControlParameter>
-            <asp:ControlParameter ControlID="ContraTextBox" PropertyName="Text" Name="contra" Type="String"></asp:ControlParameter>
-        </SelectParameters>
-    </asp:SqlDataSource>
+    <asp:Login ID="Login1" runat="server">
+        <LayoutTemplate>
+            <div class="ib" style="width:60%">
+                <h1>Iniciar sesión</h1><br />
+                <asp:Label runat="server" AssociatedControlID="UserName" ID="UserNameLabel">Nombre de usuario:</asp:Label>
+                <asp:TextBox runat="server" CssClass="textBox" Height="20px" ID="UserName"></asp:TextBox><br /><br />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName" ErrorMessage="El nombre de usuario es obligatorio." ValidationGroup="Login1" ToolTip="El nombre de usuario es obligatorio." ID="UserNameRequired">*</asp:RequiredFieldValidator>
+                <asp:Label runat="server" AssociatedControlID="Password" ID="PasswordLabel">Contraseña:</asp:Label>
+                <asp:TextBox runat="server" CssClass="textBox" Height="20px" TextMode="Password" ID="Password"></asp:TextBox><br /><br />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" ErrorMessage="La contrase&#241;a es obligatoria." ValidationGroup="Login1" ToolTip="La contrase&#241;a es obligatoria." ID="PasswordRequired">*</asp:RequiredFieldValidator>
+                <asp:CheckBox runat="server" Text="Record&#225;rmelo la pr&#243;xima vez." ID="RememberMe"></asp:CheckBox>
+                <asp:Literal runat="server" ID="FailureText" EnableViewState="False"></asp:Literal><br />
+                <asp:Button CssClass="button" runat="server" CommandName="Login" Text="Inicio de sesi&#243;n" ValidationGroup="Login1" ID="LoginButton"></asp:Button>
+            </div>
+            <div class="clear"></div>
+        </LayoutTemplate>
+    </asp:Login>
 </asp:Content>
