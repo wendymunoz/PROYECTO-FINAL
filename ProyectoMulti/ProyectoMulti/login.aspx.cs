@@ -21,7 +21,7 @@ namespace ProyectoMulti
 
             int numero;
             numero = 0;
-            DataView dvSql = (DataView)SqlDataSource2.Select(DataSourceSelectArguments.Empty);
+            DataView dvSql = (DataView)SqlDataSource1.Select(DataSourceSelectArguments.Empty);
 
             if (dvSql.Count > 0)
             {
@@ -35,7 +35,7 @@ namespace ProyectoMulti
             {
                 //Session["usuario"] = dvSql[0].DataView[0];
                 Session["Usuarios"] = dvSql[0].Row[0];
-                Response.Redirect("Default.aspx");
+                Response.Redirect("TiendaOnline.aspx");
                 
             }
 

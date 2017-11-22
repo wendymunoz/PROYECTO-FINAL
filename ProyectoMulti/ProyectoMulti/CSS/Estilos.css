@@ -129,7 +129,7 @@ nav {
 
         nav ul li {
             background-color: limegreen;
-            width: 210px;
+            width: 223px;
             height: 35px;
             float: left;
             line-height: 35px;
@@ -267,11 +267,9 @@ p{
 
 .textBox{
     border-radius:7px;
-    height:25px;
     border: solid 1px limegreen;
     margin-left:4px;
-    width:70%;
-}
+    }
 
 .clear{
     clear:both;

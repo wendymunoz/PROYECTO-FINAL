@@ -27,11 +27,14 @@
                     <span>
                         <img src="Imagenes/usuario.png" width="30" /></span>
                     <div class="dropdown-content">
+
                         <p><a href="login.aspx">Ingresa</a></p>
                         <hr>
+                        <p><a href="LoginAdmin.aspx">Ingresa Admin</a></p>
+                        <hr>
                         <p><a href="Registro.aspx">Registrarse</a></p>
-                        <hr />
-                        <asp:Label ID="lblHola" runat="server" Text=""></asp:Label>
+
+                        
                     </div>
                 </div>
 
