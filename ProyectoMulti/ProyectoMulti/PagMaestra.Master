@@ -19,28 +19,51 @@
 
             <div class="sesion">
 
-                <a href="Registro.aspx">
-                    <img src="Imagenes/boton.png" style="margin-top: 20px; margin-right: 5px;" height="30" />
-                </a>
+                <asp:LoginView ID="LoginView1" runat="server">
+                    <AnonymousTemplate>
+                        <a href="Registro.aspx">
+                            <img src="Imagenes/boton.png" style="margin-top: 20px; margin-right: 5px;" height="30" />
+                        </a>
 
-                <div class="dropdown">
-                    <span>
-                        <img src="Imagenes/usuario.png" width="30" /></span>
-                    <div class="dropdown-content">
+                        <div class="dropdown">
+                            <span>
+                                <img src="Imagenes/usuario.png" width="30" /></span>
+                            <div class="dropdown-content">
 
-                        <p><a href="login.aspx">Ingresa</a></p>
-                        <hr>
-                        <p><a href="LoginAdmin.aspx">Ingresa Admin</a></p>
-                        <hr>
-                        <p><a href="Registro.aspx">Registrarse</a></p>
+                                <p><a href="login.aspx">Ingresa</a></p>
+                                <hr>
+                                <p><a href="LoginAdmin.aspx">Ingresa Admin</a></p>
+                                <hr>
+                                <p><a href="Registro.aspx">Registrarse</a></p>
 
-                        
-                    </div>
-                </div>
 
-                <div class="dropdown">
-                    <img src="Imagenes/carrito.png" width="30" />
-                </div>
+                            </div>
+                        </div>
+                    </AnonymousTemplate>
+
+                    <LoggedInTemplate>
+                        <a href="Registro.aspx">
+                            <img src="Imagenes/boton.png" style="margin-top: 20px; margin-right: 5px;" height="30" />
+                        </a>
+
+                        <div class="dropdown">
+                            <span>
+                                <img src="Imagenes/usuario.png" width="30" /></span>
+                            <div class="dropdown-content">
+
+                                <p>Bienvenido:
+                                    <asp:LoginName ID="LoginName1" runat="server" />
+                                </p>
+                                <hr>
+                                <p>
+                                    <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </LoggedInTemplate>
+                </asp:LoginView>
 
             </div>
 
