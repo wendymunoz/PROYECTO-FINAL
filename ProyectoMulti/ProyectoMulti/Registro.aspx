@@ -2,83 +2,55 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Regístrate</h1>
+    <asp:FormView ID="FormView1" runat="server" DefaultMode="Insert" DataKeyNames="DNI" DataSourceID="SqlDataSource1">
+        <InsertItemTemplate>
+            <div class="ib">
+                <asp:Label ID="Label2" runat="server" Text="Label">Nombre:</asp:Label>
+                <asp:TextBox Text='<%# Bind("Nombre") %>' CssClass="textBox" runat="server" ID="NombreTextBox" /><br /><br />
+                <asp:Label ID="Label1" runat="server" Text="Label">DNI:</asp:Label>
+                <asp:TextBox Text='<%# Bind("DNI") %>' CssClass="textBox" TextMode="Number" runat="server" ID="DNITextBox" /><br /><br />
+                <asp:Label ID="Label7" runat="server" Text="Label">Telefono:</asp:Label>
+                <asp:TextBox Text='<%# Bind("Telefono") %>' CssClass="textBox" TextMode="Number" runat="server" ID="TelefonoTextBox" /><br /><br />
+                <asp:Label ID="Label4" runat="server" Text="Label">Correo:</asp:Label>
+                <asp:TextBox Text='<%# Bind("Correo") %>' CssClass="textBox" TextMode="Email" runat="server" ID="CorreoTextBox" /><br /><br />
+            </div>
+            <div class="ib">
+                <asp:Label ID="Label3" runat="server" Text="Label">Apellido:</asp:Label>
+                <asp:TextBox Text='<%# Bind("Apellido") %>' CssClass="textBox" runat="server" ID="ApellidoTextBox" /><br /><br />
+                <asp:Label ID="Label6" runat="server" Text="Label">Direccion:</asp:Label>
+                <asp:TextBox Text='<%# Bind("Direccion") %>' CssClass="textBox" runat="server" ID="DireccionTextBox" /><br /><br />
+                <asp:Label ID="Label8" runat="server" Text="Label">Celular:</asp:Label>
+                <asp:TextBox Text='<%# Bind("Celular") %>' CssClass="textBox" TextMode="Number" runat="server" ID="CelularTextBox" /><br /><br />
+                <asp:Label ID="Label5" runat="server" Text="Label">Contraseña:</asp:Label>
+                <asp:TextBox Text='<%# Bind("Contrasena") %>' CssClass="textBox" TextMode="Password" runat="server" ID="ContrasenaTextBox" /><br /><br />
+            </div>
+            <div style="padding-left:28%">
+                <asp:LinkButton runat="server" Text="Guardar" CssClass="button" CommandName="Insert" ID="InsertButton" CausesValidation="True" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton runat="server" Text="Cancel" CssClass="button" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" /><br /><br />
+            </div>
+        </InsertItemTemplate>
+    </asp:FormView>
 
-    <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" Width="707px">
-        <WizardSteps>
-            <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
-                <ContentTemplate>
-                    <div class="ib" style="width: 104%">
-                        <table style="width: 574px">
-                            <tr>
-                                <td align="left" colspan="2">¡Ingresa tus datos para que empieces a comprar!</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="text-align: left; width: 204px">
-                                    <asp:Label runat="server" AssociatedControlID="UserName" ID="UserNameLabel">Nombre de Usuario:</asp:Label></td>
-                                <td style="width: 279px">
-                                    <asp:TextBox runat="server" CssClass="textBox" ID="UserName" Width="244px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName" ErrorMessage="User Name is required." ValidationGroup="CreateUserWizard1" ToolTip="User Name is required." ID="UserNameRequired">*</asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="text-align: left; width: 204px">
-                                    <asp:Label runat="server" AssociatedControlID="Password" ID="PasswordLabel">Contraseña:</asp:Label></td>
-                                <td style="width: 279px">
-                                    <asp:TextBox runat="server" CssClass="textBox" TextMode="Password" ID="Password" Width="244px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" ErrorMessage="Password is required." ValidationGroup="CreateUserWizard1" ToolTip="Password is required." ID="PasswordRequired">*</asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="text-align: left; width: 204px;">
-                                    <asp:Label runat="server" AssociatedControlID="ConfirmPassword" ID="ConfirmPasswordLabel">Confirma Contraseña:</asp:Label></td>
-                                <td style="width: 279px">
-                                    <asp:TextBox runat="server" CssClass="textBox" TextMode="Password" ID="ConfirmPassword" Width="244px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmPassword" ErrorMessage="Confirm Password is required." ValidationGroup="CreateUserWizard1" ToolTip="Confirm Password is required." ID="ConfirmPasswordRequired">*</asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="text-align: left; width: 204px">
-                                    <asp:Label runat="server" AssociatedControlID="Email" ID="EmailLabel">E-mail:</asp:Label></td>
-                                <td style="width: 279px">
-                                    <asp:TextBox runat="server" CssClass="textBox" ID="Email" Width="244px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Email" ErrorMessage="E-mail is required." ValidationGroup="CreateUserWizard1" ToolTip="E-mail is required." ID="EmailRequired">*</asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="text-align: left; width: 204px">
-                                    <asp:Label runat="server" AssociatedControlID="Question" ID="QuestionLabel">Pregunta de Seguridad:</asp:Label></td>
-                                <td style="width: 279px">
-                                    <asp:TextBox runat="server" CssClass="textBox" ID="Question" Width="244px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Question" ErrorMessage="Security question is required." ValidationGroup="CreateUserWizard1" ToolTip="Security question is required." ID="QuestionRequired">*</asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="text-align: left; width: 204px">
-                                    <asp:Label runat="server" AssociatedControlID="Answer" ID="AnswerLabel">Respuesta de Seguridad:</asp:Label></td>
-                                <td style="width: 279px">
-                                    <asp:TextBox runat="server" CssClass="textBox" ID="Answer" Width="244px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Answer" ErrorMessage="Security answer is required." ValidationGroup="CreateUserWizard1" ToolTip="Security answer is required." ID="AnswerRequired">*</asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center" colspan="2">
-                                    <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword" ErrorMessage="The Password and Confirmation Password must match." Display="Dynamic" ValidationGroup="CreateUserWizard1" ID="PasswordCompare"></asp:CompareValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center" colspan="2" style="color: Red;">
-                                    <asp:Literal runat="server" ID="ErrorMessage" EnableViewState="False"></asp:Literal>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </ContentTemplate>
-            </asp:CreateUserWizardStep>
-            <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server">
-            </asp:CompleteWizardStep>
-        </WizardSteps>
-    </asp:CreateUserWizard>
+    <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' DeleteCommand="DELETE FROM [Usuarios] WHERE [DNI] = @DNI" InsertCommand="INSERT INTO [Usuarios] ([DNI], [Nombre], [Apellido], [Correo], [Contrasena], [Direccion], [Telefono]) VALUES (@DNI, @Nombre, @Apellido, @Correo, @Contrasena, @Direccion, @Telefono)" SelectCommand="SELECT * FROM [Usuarios]" UpdateCommand="UPDATE [Usuarios] SET [Nombre] = @Nombre, [Apellido] = @Apellido, [Correo] = @Correo, [Contrasena] = @Contrasena, [Direccion] = @Direccion, [Telefono] = @Telefono WHERE [DNI] = @DNI">
+        <DeleteParameters>
+            <asp:Parameter Name="DNI" Type="String"></asp:Parameter>
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="DNI" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Nombre" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Apellido" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Correo" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Contrasena" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Direccion" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Telefono" Type="String"></asp:Parameter>
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Nombre" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Apellido" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Correo" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Contrasena" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Direccion" Type="String"></asp:Parameter>
+            <asp:Parameter Name="Telefono" Type="String"></asp:Parameter>
+            <asp:Parameter Name="DNI" Type="String"></asp:Parameter>
+        </UpdateParameters>
+    </asp:SqlDataSource>
 </asp:Content>
