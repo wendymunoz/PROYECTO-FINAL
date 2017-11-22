@@ -21,7 +21,7 @@
                     <br /><br />
                     <h3>Descripcion:</h3>
                     <asp:Label ID="DescripcionLabel" runat="server" Text='<%# Eval("Descripcion") %>' /><br /><br />
-                    <asp:Button ID="Button1" CssClass="button" runat="server" Text="Agregar a Carrito" />
+                    <asp:Button ID="Button1" CssClass="button" runat="server" Text="Agregar a Carrito" OnClick="Button1_Click" />
                 </div>
             </ItemTemplate>
         </asp:Repeater>
@@ -31,5 +31,23 @@
             </SelectParameters>
         </asp:SqlDataSource>
     </div>
-
+    <asp:SqlDataSource runat="server" ID="SqlDataSource2" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [Productos] WHERE ([CategoriaId] = @CategoriaId)">
+        <SelectParameters>
+            <asp:QueryStringParameter QueryStringField="idC" Name="CategoriaId" Type="Int32"></asp:QueryStringParameter>
+        </SelectParameters>
+    </asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' 
+        InsertCommand="INSERT INTO [Carrito] ( [Fecha], [Subtotal], [IGV], [Total], [DNIcliente]) VALUES ( @Fecha, @Subtotal, @IGV, @Total, @DNIcliente)">
+        
+        <InsertParameters>
+         
+            <asp:Parameter Name="Fecha" Type="DateTime"></asp:Parameter>
+            <asp:Parameter Name="Subtotal" Type="Decimal"></asp:Parameter>
+            <asp:Parameter Name="IGV" Type="Decimal"></asp:Parameter>
+            <asp:Parameter Name="Total" Type="Decimal"></asp:Parameter>
+            <asp:Parameter Name="DNIcliente" Type="String"></asp:Parameter>
+        </InsertParameters>
+        
+    </asp:SqlDataSource>
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 </asp:Content>
