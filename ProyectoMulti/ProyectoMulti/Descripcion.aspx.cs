@@ -14,6 +14,15 @@ namespace ProyectoMulti
 
         }
 
-       
+        protected void FormView2_ItemInserting(object sender, FormViewInsertEventArgs e)
+        {
+            var fechaActual = DateTime.Now;
+            var productoActual = Request.QueryString["pId"];
+            var usuario = "Wen";
+
+            e.Values["Usuario"] = usuario;
+            e.Values["FechaCreacion"] = fechaActual;
+            e.Values["ProductoId"] = productoActual;
+        }
     }
 }
