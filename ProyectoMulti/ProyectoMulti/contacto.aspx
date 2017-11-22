@@ -54,7 +54,7 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="MensajeTxt" CssClass="alerta" Display="Dynamic" ErrorMessage="Completar este campo">Completar este campo</asp:RequiredFieldValidator>
         </p>
         <p style="text-align: center">
-            <asp:Button ID="EnviarBtt" CssClass="button" runat="server" Text="Enviar" />
+            <asp:Button ID="EnviarBtt" CssClass="button" runat="server" Text="Enviar" OnClick="EnviarBtt_Click" />
         </p>
     </div>
 </asp:Content>
