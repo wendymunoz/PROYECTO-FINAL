@@ -129,7 +129,7 @@ nav {
 
         nav ul li {
             background-color: limegreen;
-            width: 252px;
+            width: 224px;
             height: 35px;
             float: left;
             line-height: 35px;
@@ -162,7 +162,7 @@ nav {
         nav ul li > ul li {
             background-color: limegreen;
             color: #333;
-            border: solid:1px white;
+            border:solid 1px white;
         }
 
         nav ul li:hover > ul {

@@ -3,8 +3,9 @@
 
     <h1>Menu principal de administración</h1>
     
+    
     <ul>
         <li><a href="Productos.aspx">Administrar productos</a></li>
     </ul>
-
+        
 </asp:Content>

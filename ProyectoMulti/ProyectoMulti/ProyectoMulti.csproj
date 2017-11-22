@@ -66,10 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\Default.aspx" />
-    <Content Include="Admin\EditarProducto.aspx" />
-    <Content Include="Admin\Productos.aspx" />
-    <Content Include="Admin\RegistrarProducto.aspx" />
+    <Content Include="Administrador.aspx" />
     <Content Include="App_Data\TheGreenHome.mdf" />
     <Content Include="App_Data\TheGreenHome_log.ldf">
       <DependentUpon>TheGreenHome.mdf</DependentUpon>
@@ -82,6 +79,7 @@
     <Content Include="Content\slick\slick.js" />
     <Content Include="Content\slick\slick.min.js" />
     <Content Include="Descripcion.aspx" />
+    <Content Include="EditarProducto.aspx" />
     <Content Include="Imagenes\Alimentos1.jpg" />
     <Content Include="Imagenes\Alimentos10.jpg" />
     <Content Include="Imagenes\Alimentos11.jpg" />
@@ -204,38 +202,19 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Productos.aspx" />
+    <Content Include="RegistrarProducto.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="TiendaOnline.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\EditarProducto.aspx.cs">
-      <DependentUpon>EditarProducto.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\EditarProducto.aspx.designer.cs">
-      <DependentUpon>EditarProducto.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Productos.aspx.cs">
-      <DependentUpon>Productos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Productos.aspx.designer.cs">
-      <DependentUpon>Productos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\RegistrarProducto.aspx.cs">
-      <DependentUpon>RegistrarProducto.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\RegistrarProducto.aspx.designer.cs">
-      <DependentUpon>RegistrarProducto.aspx</DependentUpon>
+    <Compile Include="Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
     </Compile>
     <Compile Include="Blog.aspx.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
@@ -250,6 +229,13 @@
     </Compile>
     <Compile Include="Descripcion.aspx.designer.cs">
       <DependentUpon>Descripcion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarProducto.aspx.cs">
+      <DependentUpon>EditarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarProducto.aspx.designer.cs">
+      <DependentUpon>EditarProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -289,6 +275,13 @@
     <Compile Include="PagMaestra.Master.designer.cs">
       <DependentUpon>PagMaestra.Master</DependentUpon>
     </Compile>
+    <Compile Include="Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="contacto.aspx.cs">
       <DependentUpon>contacto.aspx</DependentUpon>
@@ -296,6 +289,13 @@
     </Compile>
     <Compile Include="contacto.aspx.designer.cs">
       <DependentUpon>contacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarProducto.aspx.cs">
+      <DependentUpon>RegistrarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarProducto.aspx.designer.cs">
+      <DependentUpon>RegistrarProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Registro.aspx.cs">
       <DependentUpon>Registro.aspx</DependentUpon>

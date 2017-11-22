@@ -82,6 +82,7 @@
                 <li><a href="Nosotros.aspx">Nosotros</a></li>
                 <li><a href="contacto.aspx">Contacto</a></li>
                 <li><a href="Blog.aspx">Blog</a></li>
+                <li><a href="Administrador.aspx">Administrador</a></li>
             </ul>
         </nav>
 
