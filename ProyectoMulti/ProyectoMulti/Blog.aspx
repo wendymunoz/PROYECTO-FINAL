@@ -3,7 +3,7 @@
     
 <h1>Recetas saludables</h1>
 
-<h1>Ensalada de quinoa, espárragos y fresas</h1>
+<h1>Ensalada de quinua, espárragos y fresas</h1>
 <br />  
 <br />
 <table>
