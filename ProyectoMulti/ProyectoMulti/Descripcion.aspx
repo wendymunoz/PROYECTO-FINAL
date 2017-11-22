@@ -3,13 +3,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="contento">
-        <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
+        <asp:DataList ID="Datalist1" runat="server" DataSourceID="SqlDataSource1" OnItemCommand="Datalist1_ItemCommand">
             <ItemTemplate>
                 <h1>Descripción de <%#Eval("Nombre") %></h1>
                 <div id="imag">
                     <img src="Imagenes/<%# Eval("Imagen") %>" width="300" />
                 </div>
                 <div id="desc-p">
+                    <h3>Codigo :</h3>
+                    <asp:Label ID="ProductoIdLabel" runat="server" Text='<%# Eval("ProductoId") %>' />
+                    <br /><br />
                     <h3>Nombre:</h3>
                     <asp:Label ID="NombreLabel" runat="server" Text='<%# Eval("Nombre") %>' />
                     <br /><br />
@@ -21,10 +24,10 @@
                     <br /><br />
                     <h3>Descripcion:</h3>
                     <asp:Label ID="DescripcionLabel" runat="server" Text='<%# Eval("Descripcion") %>' /><br /><br />
-                    <asp:Button ID="Button1" CssClass="button" runat="server" Text="Agregar a Carrito" OnClick="Button1_Click" />
+                    <asp:Button ID="Button1" CssClass="button"  CommandName="Seleccionar" runat="server" Text="Agregar a Carrito" OnClick="Button1_Click" />
                 </div>
             </ItemTemplate>
-        </asp:Repeater>
+        </asp:DataList>
         <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [Productos] WHERE ([ProductoId] = @ProductoId)">
             <SelectParameters>
                 <asp:QueryStringParameter QueryStringField="pId" Name="ProductoId" Type="Int32"></asp:QueryStringParameter>
