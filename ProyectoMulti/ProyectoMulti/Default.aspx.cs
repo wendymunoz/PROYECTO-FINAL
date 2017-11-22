@@ -10,11 +10,11 @@ namespace ProyectoMulti
 {
     public partial class Default : System.Web.UI.Page
     {
-        private bool eMailSent;
+        
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void Button1_Click1(object sender, EventArgs e)

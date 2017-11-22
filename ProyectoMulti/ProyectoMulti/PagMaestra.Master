@@ -15,55 +15,41 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <header>
-        
-        <div class="sesion">
+        <header>
 
-            <a href="Registro.aspx">
-                <img src="Imagenes/boton.png" style="margin-top: 20px; margin-right: 5px;" height="30" />
-            </a>
+            <div class="sesion">
 
-            <asp:LoginView ID="LoginView1" runat="server">
-                <AnonymousTemplate>
-                    <div class="dropdown">
-                        <span>
-                            <img src="Imagenes/usuario.png" width="30" /></span>
-                        <div class="dropdown-content">
-                            <p><a href="login.aspx">Ingresa</a></p>
-                            <hr>
-                            <p><a href="Registro.aspx">Registrarse</a></p>
-                        </div>
+                <a href="Registro.aspx">
+                    <img src="Imagenes/boton.png" style="margin-top: 20px; margin-right: 5px;" height="30" />
+                </a>
+
+                <div class="dropdown">
+                    <span>
+                        <img src="Imagenes/usuario.png" width="30" /></span>
+                    <div class="dropdown-content">
+                        <p><a href="login.aspx">Ingresa</a></p>
+                        <hr>
+                        <p><a href="Registro.aspx">Registrarse</a></p>
+                        <hr />
+                        <asp:Label ID="lblHola" runat="server" Text=""></asp:Label>
                     </div>
-                </AnonymousTemplate>
-                <LoggedInTemplate>
-                    <div class="dropdown">
-                        <span>
-                            <img src="Imagenes/usuario.png" width="30" /></span>
-                            <div class="dropdown-content">
-                                <p>Bienvenido:<br /><asp:LoginName ID="LoginName1" runat="server" /></p>
-                                <hr>
-                                <p><asp:LoginStatus ID="LoginStatus1" runat="server" /></p>
-                            </div>
-                    </div>
-                </LoggedInTemplate>
-            </asp:LoginView>
-            
-            <div class="dropdown">
-                <span>
-                    <img src="Imagenes/carrito.png" width="30" /></span>
+                </div>
+
+                <div class="dropdown">
+                    <img src="Imagenes/carrito.png" width="30" />
+                </div>
+
             </div>
 
-        </div>
-        
-        <div class="logo">
-            <img src="Imagenes/logo1.png" width="150" />
-        </div>
-        <div class="clear"></div>
-    </header>
+            <div class="logo">
+                <img src="Imagenes/logo1.png" width="150" />
+            </div>
+            <div class="clear"></div>
+        </header>
         <nav>
             <ul>
                 <li><a href="Default.aspx">Inicio</a></li>
-                <li><a href="TiendaOnline.aspx" style="z-index:30;">Tienda Online</a>
+                <li><a href="TiendaOnline.aspx" style="z-index: 30;">Tienda Online</a>
                     <ul>
                         <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
                             <ItemTemplate>
@@ -92,9 +78,9 @@
         </div>
 
 
-    <footer>
-        <p>La Mejor Tienda en productos saludables</p>
-    </footer>
+        <footer>
+            <p>La Mejor Tienda en productos saludables</p>
+        </footer>
 
     </form>
 </body>
